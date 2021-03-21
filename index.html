@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://kit.fontawesome.com/6b20b1c14d.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/6b20b1c14d.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 	<title>Glassmorhpic</title>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 	<main>
@@ -22,11 +27,12 @@
 
 
 			<div class="container">
+
 				<div class="bio-container">
 					<div class="intro">
-						<img src="pic.jpg">
-						<h1>Dennis Ivanov</h1>
-						<h3 class="snippet">I was a lead developer in a past life, now I enjoy teaching courses.</h3>
+						<img id="profile_pic" src="pic.jpg">
+						<h1>DENNIS IVANOV</h1>
+						<p class="snippet">I was a lead developer in a past life, now I enjoy teaching courses.</p>
 					</div>
 					<div class="about">
 						<h2>ABOUT</h2>
@@ -43,95 +49,95 @@
 
 
 				<div class="content-container">
+					<div id='projects-title-wrapper'>
+						<img id="slideLeft" class="arrow" src="arrow.png">
 
-					<h1 class="projects-title">Projects</h1>
-					<div class="projects-container">
+						<img id="slideRight" class="arrow" src="arrow.png">
+					</div>
+
+
+					<div id="scroll-container" class="projects-container">
 						<div class="project-card">
 							<img src="ClassBasedViews-blog.jpg" class="proj-img">
-							<h3 class="proj-title">Laboratory Management System</h3>
+							<div class="project-card-body">
+								<h3 class="proj-title">Class Based Views</h3>
+							</div>
 						</div>
 						<div class="project-card">
 							<img src="FOIdashboard.jpg" class="proj-img">
-							<h3 class="proj-title">Laboratory Management System</h3>
+							<div class="project-card-body">
+								<h3 class="proj-title">Laboratory Management System</h3>
+							</div>
 						</div>
 						<div class="project-card">
 							<img src="Udemy.jpg" class="proj-img">
-							<h3 class="proj-title">Django & React Ecommerce Site</h3>
+							<div class="project-card-body">
+								<h3 class="proj-title">Django & React Ecommerce Site</h3>
+							</div>
 						</div>
 					</div>
 
-					<h1 class="projects-title" id="skills">Skills</h1>
+
+
 					<div class="skills-container">
 						<div class="skills-container1">
-							<div class="dropdown">
-							  <button class="dropbtn">Python</button>
-							  <div class="dropdown-content">
-							    <p>This is how much I know.</p>
-							  </div>
+
+							<div class="skill-wrapper">
+								<p class="dropbtn">Python</p>
+								<p class="expand-icon">&#43;</p>
+								<div class="skill-detail">
+									<h1>Hidden Content</h1>
+								</div>
 							</div>
 
-							<div class="dropdown">
-							  <button class="dropbtn">Django</button>
-							  <div class="dropdown-content">
-							    <p>This is how much I know.</p>
-							  </div>
+							<div class="skill-wrapper">
+								<p class="dropbtn">Django</p>
+								<p class="expand-icon">&#43;</p>
 							</div>
 
-							<div class="dropdown">
-							  <button class="dropbtn">React</button>
-							  <div class="dropdown-content">
-							    <p>This is how much I know.</p>
-							  </div>
+							<div class="skill-wrapper">
+								<p class="dropbtn">React</p>
+								<p class="expand-icon">&#43;</p>
 							</div>
 
-							<div class="dropdown">
-							  <button class="dropbtn">JavaScript</button>
-							  <div class="dropdown-content">
-							    <p>This is how much I know.</p>
-							  </div>
+							<div class="skill-wrapper">
+								<p class="dropbtn">JavaScript</p>
+								<p class="expand-icon">&#43;</p>
 							</div>
 
-							<div class="dropdown">
-							  <button class="dropbtn">Postgres</button>
-							  <div class="dropdown-content">
-							    <p>This is how much I know.</p>
-							  </div>
+							<div class="skill-wrapper">
+								<p class="dropbtn">Postgres</p>
+								<p class="expand-icon">&#43;</p>
 							</div>
 						</div>
+
 						<div class="skills-container2">
-							<div class="dropdown">
-							  <button class="dropbtn">Google Maps API</button>
-							  <div class="dropdown-content">
-							    <p>This is how much I know.</p>
-							  </div>
+							<div class="skill-wrapper">
+								<p class="dropbtn">Google Maps API</p>
+								<p class="expand-icon">&#43;</p>
 							</div>
 
-							<div class="dropdown">
-							  <button class="dropbtn">JS Charts</button>
-							  <div class="dropdown-content">
-							    <p>This is how much I know.</p>
-							  </div>
+							<div class="skill-wrapper">
+								<p class="dropbtn">JS Charts</p>
+								<p class="expand-icon">&#43;</p>
+
 							</div>
 
-							<div class="dropdown">
-							  <button class="dropbtn">AWS (RDS/S3)</button>
-							  <div class="dropdown-content">
-							    <p>This is how much I know.</p>
-							  </div>
+							<div class="skill-wrapper">
+								<p class="dropbtn">AWS (RDS/S3)</p>
+								<p class="expand-icon">&#43;</p>
+
 							</div>
 
-							<div class="dropdown">
-							  <button class="dropbtn">Heroku</button>
-							  <div class="dropdown-content">
-							    <p>This is how much I know.</p>
-							  </div>
+							<div class="skill-wrapper">
+								<p class="dropbtn">Heroku</p>
+								<p class="expand-icon">&#43;</p>
+
 							</div>
 
-							<div class="dropdown">
-							  <button class="dropbtn">HTML/CSS</button>
-							  <div class="dropdown-content">
-							    <p>This is how much I know.</p>
-							  </div>
+							<div class="skill-wrapper">
+								<p class="dropbtn">HTML/CSS</p>
+								<p class="expand-icon">&#43;</p>
 							</div>
 						</div>
 					</div>
@@ -145,4 +151,5 @@
 
 
 </body>
+
 </html>
