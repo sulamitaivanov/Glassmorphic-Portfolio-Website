@@ -153,17 +153,6 @@ p{
 	transform: rotate(180deg);
 }
 
-.arrow{
-	height: 30px;
-	width: 30px;
-	margin: 20px;
-	display: none;
-}
-
-.arrow:hover{
-	cursor: pointer;
-	opacity: .7;
-}
 
 
 .projects-title{
@@ -244,8 +233,8 @@ p{
 }
 
 .project-card-body{
-	box-shadow: 6px 6px 20px rgba(122,122,122,0.2);
-	box-shadow: inset 0 0 2000px rgba(255, 255, 255, .4);
+	box-shadow: 6px 6px 20px rgba(122,122,122,0.1);
+	box-shadow: inset 0 0 2000px rgba(255, 255, 255, .2);
 
 
 	padding: 20px;
@@ -293,25 +282,31 @@ p{
 .skill-wrapper{
 	border-bottom: 1px solid rgba(152,205,237,0.5);
 	padding: 0.5em 1em;
+	
+}
+
+.skill{
+	font-size: 18px;
+}
+
+.skill-preview-wrapper{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.dropbtn{
-	font-size: 1.2em;
-	border: 0;
-	padding: .5em 0;
-	color: #fff;
-}
 
-.dropbtn:hover < * {
-	color: chartreuse;
-	display: block;
-}
 
 .skill-detail{
-	display: none;
+	height: 0;
+	overflow: hidden;
+	margin-top: 20px;
+
+}
+
+.skill-detail p{
+
+	color: rgb(218, 216, 219);
 }
 
 
