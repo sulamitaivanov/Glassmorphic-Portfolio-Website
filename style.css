@@ -18,13 +18,17 @@ h2{
 	font-family: 'Rajdhani', sans-serif;
 }
 
+h3{
+	color: #ffffff;
+	font-family: 'Rajdhani', sans-serif;
+}
+
 p{
 	font-size: 16px;
 	color: rgb(255, 255, 255);
 }
 
 hr{
-	margin-top: 2em;
 	border: 0; 
 	border-top: 1px solid rgba(152,205,237,0.5);
 	
@@ -38,6 +42,11 @@ main{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.custom-spacer{
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 
@@ -89,7 +98,6 @@ main{
 .container{
 	display: flex;
 	justify-content: space-evenly;
-	margin-top: 4em;
 }
 
 
@@ -101,13 +109,25 @@ main{
 
 
 #profile_pic{
-	width: 150px;
+	width: 200px;
 	border-radius: 50%;
 }
 
 
-.about{
-	margin-top: 3.5em;
+.contact-options{
+	margin-top: 1.5em;
+}
+
+.contact-options a{
+	text-decoration: none;
+	color: #fff;
+	margin: 5px;
+	font-style: italic;
+	font-size: 14px;
+}
+
+.contact-options a:hover{
+	color: rgba(255, 255, 255, 0.2)
 }
 
 .snippet{
@@ -121,16 +141,19 @@ p{
 }
 
 .resume-container{
-	margin-top: 4em;
+	margin-top: 1em;
 }
 
 .resume{
-	background-color: #6fafd3;
+	margin: 15px;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	background-color: #6faed356;
 	border:0;
 	color: #fff;
-	padding: 1em;
+	padding: 5px;
 	border-radius: 50px;
-	opacity: 0.5;
 	font-size: 1em;
 }
 
@@ -199,30 +222,17 @@ p{
   }
 
 .project-card{
-
-
-	border-radius: .5rem;
+	border-radius:5px 5px 5px 5px;
 	margin-left: 1em;
 	color: #1f3040;
-
-	
-	
 	width: 300px;
 	overflow: hidden;
-
-	/* background:#ffc;
-	margin:10px;
-	padding: 10px;
-
-	box-shadow: 5px 5px 7px rgba(33,33,33,.7);
-	transform: rotate(-6deg);
-	font-family: 'Reenie Beanie';
-	font-size: 24px; */
 }
 
 
 
 .proj-img{
+	display: block;
 	width: 100%;
 	height: 175px;
 	object-fit: cover;
@@ -233,20 +243,33 @@ p{
 }
 
 .project-card-body{
-	box-shadow: 6px 6px 20px rgba(122,122,122,0.1);
-	box-shadow: inset 0 0 2000px rgba(255, 255, 255, .2);
-
-
-	padding: 20px;
-	min-height: 100px;
+	/* box-shadow: 6px 6px 20px rgba(122,122,122,0.6);
+	box-shadow: inset 0 0 2000px rgba(255, 255, 255, .9); */
+	background-color: #fff;
+	padding: 10px;
 	margin:0;
 	box-sizing: border-box;
-	margin-top:-20px;
+	border-radius:0 0 5px 5px;
+	height: 100%;
+
+}
+
+
+
+.about-wrapper{
+	margin-top: 50px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	/* box-shadow: 6px 6px 20px rgba(122,122,122,0.6);
+	box-shadow: inset 0 0 2000px rgba(255, 255, 255, .9); */
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
 }
 
 .proj-title{
-	font-size: 18px;
-	color: #ffffff;
+	font-size: 16px;
+	color: #39395f;
 
 }
 
@@ -301,7 +324,6 @@ p{
 	height: 0;
 	overflow: hidden;
 	margin-top: 20px;
-
 }
 
 .skill-detail p{
@@ -315,6 +337,12 @@ p{
 	font-weight: 900;
 	cursor: pointer;
 	
+}
+
+
+#short-bio-wrapper{
+	margin: 20px;
+
 }
 
 
