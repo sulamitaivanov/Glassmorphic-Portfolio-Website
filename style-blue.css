@@ -37,8 +37,8 @@ hr{
 main{
 	font-family: "Poppins", sans-serif;
 	min-height: 100vh;
-	background: rgb(111,175,211);
-	background: linear-gradient(90deg, #2F2F59, #343360);
+	background: rgb(21,52,82);
+background: linear-gradient(90deg, rgba(21,52,82,1) 0%, rgba(11,56,101,1) 100%);
 	display: flex;
 	align-items: center;
 	justify-content: center;
