@@ -5,7 +5,6 @@
 	padding: 0;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
-	transition: 0.3s;
 }
 
 h1{
@@ -38,8 +37,8 @@ hr{
 main{
 	font-family: "Poppins", sans-serif;
 	min-height: 100vh;
-	background: rgb(111,175,211);
-	background: linear-gradient(90deg, #2F2F59, #343360);
+	background: rgb(21,52,82);
+background: linear-gradient(90deg, rgba(21,52,82,1) 0%, rgba(11,56,101,1) 100%);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -128,7 +127,7 @@ main{
 }
 
 .contact-options a:hover{
-	color: rgba(255, 255, 255, 0.5)
+	color: rgba(255, 255, 255, 0.2)
 }
 
 .snippet{
@@ -191,40 +190,35 @@ p{
 	margin-top: 1em;
 }
 
-.project-main-wrapper{
-	overflow-x: auto;
-}
-
 .projects-container{
 	display: flex;
 	margin-top: 1em;
+	overflow-x: auto;
 	padding: 20px;
-	
-	width: fit-content;
 	
 }
 
 
 /* width */
-.project-main-wrapper::-webkit-scrollbar {
+.projects-container::-webkit-scrollbar {
 	width: 10px;
 	height: 10px;
   }
   
   /* Track */
-  .project-main-wrapper::-webkit-scrollbar-track {
+  .projects-container::-webkit-scrollbar-track {
 	box-shadow: inset 0 0 5px rgba(204, 255, 204, 0.541); 
 	border-radius: 5px;
   }
    
   /* Handle */
-  .project-main-wrapper::-webkit-scrollbar-thumb {
+  .projects-container::-webkit-scrollbar-thumb {
 	background: #fff; 
 	border-radius: 10px;
   }
   
   /* Handle on hover */
-  .project-main-wrapper::-webkit-scrollbar-thumb:hover {
+  .projects-container::-webkit-scrollbar-thumb:hover {
 	background: #fff; 
   }
 
@@ -233,6 +227,8 @@ p{
 	margin-left: 1em;
 	color: #1f3040;
 	width: 300px;
+	overflow: hidden;
+
 }
 
 
@@ -244,7 +240,6 @@ p{
 	object-fit: cover;
 	margin:0!important;
 	padding: 0!important;
-	border-radius: 5px 5px 0 0;
 	
 
 }
@@ -257,8 +252,7 @@ p{
 	margin:0;
 	box-sizing: border-box;
 	border-radius:0 0 5px 5px;
-	word-wrap: break-word
-
+	height: 100%;
 
 }
 
@@ -381,6 +375,9 @@ p{
 
 
 @media screen and (max-width:1035px){
+	.content-container{
+
+	}
 
 
 	.portfolio{
