@@ -8,32 +8,33 @@
 }
 
 h1{
-	color: #1f3040;
+	color: #ffffff;
 	font-size: 2em;
 	font-family: 'Rajdhani', sans-serif;
 }
 
 h2{
-	color: #1f3040;
+	color: #ffffff;
 	font-family: 'Rajdhani', sans-serif;
 }
 
 p{
 	font-size: 16px;
-	color: black;
+	color: rgb(255, 255, 255);
 }
 
 hr{
 	margin-top: 2em;
 	border: 0; 
-	border-top: 1px solid #1f3040;
+	border-top: 1px solid rgba(152,205,237,0.5);
+	
 }
 
 main{
 	font-family: "Poppins", sans-serif;
 	min-height: 100vh;
 	background: rgb(111,175,211);
-	background: linear-gradient(90deg, rgba(111,175,211,1) 0%, rgba(99,189,129,1) 100%);
+	background: linear-gradient(90deg, #2F2F59, #343360);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -69,18 +70,18 @@ main{
 }
 
 #dot-1{
-	background-color: #FC6058;
-	opacity: 0.5;
+	background-color: #FF5D4F;
+
 }
 
 #dot-2{
 	background-color: #FEC02F;
-	opacity: 0.5;
+
 }
 
 #dot-3{
 	background-color: #2ACA3E;
-	opacity: 0.5;
+
 }
 
 
@@ -110,13 +111,13 @@ main{
 }
 
 .snippet{
-	color: #1f3040;
-	opacity: 0.6;
+	color: #ffffff;
+
 }
 
 p{
-	opacity: 0.6;
-	color: #1f3040;
+
+	color: #ffffff;
 }
 
 .resume-container{
@@ -215,11 +216,7 @@ p{
 	margin-left: 1em;
 	color: #1f3040;
 
-	box-shadow: 6px 6px 20px rgba(122,122,122,0.2);
-	background: linear-gradient(to right bottom, 
-		rgba(152,205,237,0.8), 
-		rgba(170,201,167,0.6)
-		);
+	
 	
 	width: 300px;
 	overflow: hidden;
@@ -247,7 +244,9 @@ p{
 }
 
 .project-card-body{
+	box-shadow: 6px 6px 20px rgba(122,122,122,0.2);
 	box-shadow: inset 0 0 2000px rgba(255, 255, 255, .4);
+
 
 	padding: 20px;
 	min-height: 100px;
@@ -257,7 +256,8 @@ p{
 }
 
 .proj-title{
-	font-size: 16px;
+	font-size: 18px;
+	color: #ffffff;
 
 }
 
@@ -284,15 +284,14 @@ p{
 	flex-flow: column;
 	/* align-items: center; */
 	
-	box-shadow: 6px 6px 20px rgba(122,122,122,0.2);
-	box-shadow: inset 0 0 2000px rgba(255, 255, 255, .4);
+	 /* box-shadow: 6px 6px 20px rgba(122,122,122,0.2);
+	box-shadow: inset 0 0 2000px rgba(255, 255, 255, .4);  */
 	margin:10px;
 }
 
 
 .skill-wrapper{
-	/* border-bottom: 1px solid rgba(152,205,237,0.5); */
-	border-bottom: 1px solid rgb(180, 216, 236);
+	border-bottom: 1px solid rgba(152,205,237,0.5);
 	padding: 0.5em 1em;
 	display: flex;
 	justify-content: space-between;
@@ -303,7 +302,7 @@ p{
 	font-size: 1.2em;
 	border: 0;
 	padding: .5em 0;
-	color: rgb(0, 0, 0);
+	color: #fff;
 }
 
 .dropbtn:hover < * {
@@ -337,15 +336,15 @@ p{
 	left: 1%;
 	border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
 	background: rgb(152,205,237);
-	background: linear-gradient(90deg, rgba(152,205,237,0.5) 0%, rgba(167,187,201,1) 100%);
+	background: linear-gradient(90deg, rgba(152,205,237,0.5) 0%, rgb(127, 144, 156) 100%);
 }
 
 .blob2{
 	bottom: 1%;
 	right: 1%;
 	border-radius: 51% 81% 28% 100% / 60% 73% 36% 60%;
-	background: rgb(177,237,152);
-	background: linear-gradient(90deg, rgba(177,237,152,1) 0%, rgba(170,201,167,0.5) 100%);
+	background: #2f2f5c;
+	background: linear-gradient(90deg, rgb(182, 152, 237) 0%, rgba(179, 167, 201, 0.5) 100%);
 }
 
 
