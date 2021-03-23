@@ -1,44 +1,67 @@
-@import url('https://fonts.googleapis.com/css?family=Rajdhani:300&display=swap');
+:root{
+	--mainColor:#2F2F59;
+	--mainColorShade1:#343360;
+
+	--solidBgColor:#fff;
+
+	--glassColor:linear-gradient(to right bottom, 
+	rgba(152,205,237,0.5), 
+	rgba(170,201,167,0.3)
+	);
+
+	--lineBreakColor:rgba(152,205,237,0.5);
+
+
+
+	--textColor1:#fff;
+	--textColor2:rgb(218, 216, 219);
+	--textColor3:#39395f; /*Dark*/
+	--textColor4:#5b5b91;
+
+	--blob1BgColor:linear-gradient(90deg, rgba(152,205,237,0.5) 0%, rgb(127, 144, 156) 100%);
+
+	--blob2BgColor:linear-gradient(90deg, rgb(182, 152, 237) 0%, rgba(179, 167, 201, 0.5) 100%);
+
+}
 
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	scroll-behavior: smooth;
+	transition: 0.3s;
 }
 
 h1{
-	color: #ffffff;
+	color: var(--textColor1);
 	
 	font-family: 'Lato', sans-serif;
 }
 
 h2{
-	color: #ffffff;
+	color: var(--textColor1);
 	font-family: 'Lato', sans-serif;
 }
 
 h3{
-	color: #ffffff;
+	color: var(--textColor1);
 	font-family: 'Lato', sans-serif;
 }
 
 p{
 	font-size: 16px;
-	color: rgb(255, 255, 255);
+	color: var(--textColor1);
 }
 
 hr{
 	border: 0; 
-	border-top: 1px solid rgba(152,205,237,0.5);
+	border-top: 1px solid var(--lineBreakColor);
 	
 }
 
 main{
 	font-family: "Poppins", sans-serif;
 	min-height: 100vh;
-	background: rgb(21,52,82);
-background: linear-gradient(90deg, rgba(21,52,82,1) 0%, rgba(11,56,101,1) 100%);
+	background: linear-gradient(90deg, var(--mainColor), var(--mainColorShade1));
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -53,10 +76,7 @@ background: linear-gradient(90deg, rgba(21,52,82,1) 0%, rgba(11,56,101,1) 100%);
 .portfolio{
 	min-height: 85vh;
 	width: 85%;
-	background: linear-gradient(to right bottom, 
-		rgba(152,205,237,0.5), 
-		rgba(170,201,167,0.3)
-		);
+	background: var(--glassColor);
 	border-radius: 1rem;
 	backdrop-filter: blur(2rem);
 	box-shadow: 6px 6px 20px rgba(122,122,122,0.2);
@@ -68,7 +88,7 @@ background: linear-gradient(90deg, rgba(21,52,82,1) 0%, rgba(11,56,101,1) 100%);
 	display: flex;
 	margin: 2em;
 	padding-bottom: 20px;
-	border-bottom: 1px solid rgba(152,205,237,0.5);
+	border-bottom: 1px solid var(--lineBreakColor);
 }
 
 .browser-dot{
@@ -120,25 +140,18 @@ background: linear-gradient(90deg, rgba(21,52,82,1) 0%, rgba(11,56,101,1) 100%);
 
 .contact-options a{
 	text-decoration: none;
-	color: #fff;
+	color: var(--textColor1);
 	margin: 5px;
 	font-style: italic;
 	font-size: 14px;
 }
 
 .contact-options a:hover{
-	color: rgba(255, 255, 255, 0.2)
+	color: rgba(255, 255, 255, 0.5)
 }
 
-.snippet{
-	color: #ffffff;
 
-}
 
-p{
-
-	color: #ffffff;
-}
 
 .resume-container{
 	margin-top: 1em;
@@ -162,10 +175,6 @@ p{
 	margin-top: 1em;
 }
 
-.content-container{
-	min-width: 300px;
-	/* background-color: rgb(126, 244, 96); */
-}
 
 #projects-title-wrapper{
 	display: flex;
@@ -181,7 +190,7 @@ p{
 
 .projects-title{
 	text-align: center;
-	color: white;
+	color: var(--textColor1);
 	opacity: 0.9;
 
 }
@@ -190,45 +199,50 @@ p{
 	margin-top: 1em;
 }
 
+.project-main-wrapper{
+	overflow-x: auto;
+}
+
 .projects-container{
 	display: flex;
 	margin-top: 1em;
-	overflow-x: auto;
 	padding: 20px;
+	
+	width: fit-content;
 	
 }
 
 
 /* width */
-.projects-container::-webkit-scrollbar {
+.project-main-wrapper::-webkit-scrollbar {
 	width: 10px;
 	height: 10px;
   }
   
   /* Track */
-  .projects-container::-webkit-scrollbar-track {
+  .project-main-wrapper::-webkit-scrollbar-track {
 	box-shadow: inset 0 0 5px rgba(204, 255, 204, 0.541); 
 	border-radius: 5px;
   }
    
   /* Handle */
-  .projects-container::-webkit-scrollbar-thumb {
+  .project-main-wrapper::-webkit-scrollbar-thumb {
 	background: #fff; 
 	border-radius: 10px;
   }
   
   /* Handle on hover */
-  .projects-container::-webkit-scrollbar-thumb:hover {
+  .project-main-wrapper::-webkit-scrollbar-thumb:hover {
 	background: #fff; 
   }
 
 .project-card{
 	border-radius:5px 5px 5px 5px;
-	margin-left: 1em;
-	color: #1f3040;
-	width: 300px;
-	overflow: hidden;
 
+	/* Need to fix this... */
+	margin-left: 1em;
+	
+	width: 300px;
 }
 
 
@@ -240,19 +254,20 @@ p{
 	object-fit: cover;
 	margin:0!important;
 	padding: 0!important;
+	border-radius: 5px 5px 0 0;
 	
 
 }
 
 .project-card-body{
-	/* box-shadow: 6px 6px 20px rgba(122,122,122,0.6);
-	box-shadow: inset 0 0 2000px rgba(255, 255, 255, .9); */
-	background-color: #fff;
+
+	background-color: var(--solidBgColor);
 	padding: 10px;
 	margin:0;
 	box-sizing: border-box;
 	border-radius:0 0 5px 5px;
-	height: 100%;
+	word-wrap: break-word
+
 
 }
 
@@ -270,43 +285,41 @@ p{
 	box-shadow: 8px 5px 11px -3px rgba(14,22,97,0.19);
 }
 
+.about-title{
+	color:var(--textColor3);
+}
+
+.about-wrapper p{
+	color: var(--textColor4);
+}
+
 .proj-title{
 	font-size: 16px;
 	color: #39395f;
 
 }
 
-.skills-container{
+.skills-container-wrapper{
 	display: flex;
 	justify-content: space-evenly;
 	margin-top: 2em;
-	
 	border-radius: .5em;
-
-	
 }
 
 
 
 /* Dropdown Content */
-.skills-container1, .skills-container2{
-	flex-grow: 1;
-	
-
+.skills-container{
+	flex-grow: 2;
 	border-radius: .5em;
-
 	display: flex;
 	flex-flow: column;
-	/* align-items: center; */
-	
-	 /* box-shadow: 6px 6px 20px rgba(122,122,122,0.2);
-	box-shadow: inset 0 0 2000px rgba(255, 255, 255, .4);  */
 	margin:10px;
 }
 
 
 .skill-wrapper{
-	border-bottom: 1px solid rgba(152,205,237,0.5);
+	border-bottom: 1px solid var(--lineBreakColor);
 	padding: 0.5em 1em;
 	
 }
@@ -331,7 +344,7 @@ p{
 
 .skill-detail p{
 
-	color: rgb(218, 216, 219);
+	color: var(--textColor2);
 }
 
 
@@ -361,23 +374,18 @@ p{
 	top: 1%;
 	left: 1%;
 	border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
-	background: rgb(152,205,237);
-	background: linear-gradient(90deg, rgba(152,205,237,0.5) 0%, rgb(127, 144, 156) 100%);
+	background: var(--blob1BgColor);
 }
 
 .blob2{
 	bottom: 1%;
 	right: 1%;
 	border-radius: 51% 81% 28% 100% / 60% 73% 36% 60%;
-	background: #2f2f5c;
-	background: linear-gradient(90deg, rgb(182, 152, 237) 0%, rgba(179, 167, 201, 0.5) 100%);
+	background: var(--blob2BgColor);
 }
 
 
 @media screen and (max-width:1035px){
-	.content-container{
-
-	}
 
 
 	.portfolio{

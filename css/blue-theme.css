@@ -1,0 +1,25 @@
+:root{
+	--mainColor:rgb(21,52,82);
+	--mainColorShade1:rgba(11,56,101,1);
+
+	--solidBgColor:#fff;
+
+	--glassColor:linear-gradient(to right bottom, 
+	rgba(152,205,237,0.5), 
+	rgba(170,201,167,0.3)
+	);
+
+	--lineBreakColor:rgba(152,205,237,0.5);
+
+
+
+	--textColor1:#fff;
+	--textColor2:rgb(218, 216, 219);
+	--textColor3:rgb(21, 60, 82); /*Dark*/
+	--textColor4:rgb(74, 122, 150);
+
+	--blob1BgColor:linear-gradient(90deg, rgba(152,205,237,0.5) 0%, rgb(127, 144, 156) 100%);
+
+	--blob2BgColor:linear-gradient(90deg, rgb(182, 152, 237) 0%, rgba(179, 167, 201, 0.5) 100%);
+
+}
