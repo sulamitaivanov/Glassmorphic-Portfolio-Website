@@ -1,15 +1,15 @@
 :root{
+
 	--mainColor:#141B1F;
 	--mainColorShade1:#141B1F;
 
 	--solidBgColor:#fff;
 
-	--glassColor:linear-gradient(to right bottom, 
-	rgba(152,205,237,0.5), 
-	rgba(170,201,167,0.3)
-	);
+	--glassColor:linear-gradient(90deg, rgba(253,251,251,0.1) 0%, rgba(235,237,238,0.1) 100%);
 
-	--lineBreakColor:rgba(152,205,237,0.5);
+	--glassShadow:box-shadow: 5px 5px 15px -11px #000000;
+
+	--lineBreakColor:rgba(235,237,238,0.2);
 
 
 
@@ -18,9 +18,10 @@
 	--textColor3:#000000; /*Dark*/
 	--textColor4:#636262;
 
-	--blob1BgColor:linear-gradient(90deg, rgba(152,205,237,0.5) 0%, rgb(127, 144, 156) 100%);
+	--blob1BgColor:linear-gradient(90deg, rgba(202,202,202,0.7) 0%, rgba(99,99,99,0.8) 100%);
 
-	--blob2BgColor:linear-gradient(90deg, rgb(210, 202, 226) 0%, rgba(179, 167, 201, 0.5) 100%);
-
+	--blob2BgColor:linear-gradient(90deg, rgba(180,180,180,0.8) 0%, rgba(99,99,99,0.8) 100%);
 }
+
+
 

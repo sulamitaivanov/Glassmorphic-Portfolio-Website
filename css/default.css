@@ -5,9 +5,11 @@
 	--solidBgColor:#fff;
 
 	--glassColor:linear-gradient(to right bottom, 
-	rgba(152,205,237,0.5), 
+	rgba(152,205,237,0.4), 
 	rgba(170,201,167,0.3)
 	);
+
+	--glassShadow:box-shadow: 5px 5px 15px -11px #000000;
 
 	--lineBreakColor:rgba(152,205,237,0.5);
 
@@ -79,7 +81,6 @@ main{
 	background: var(--glassColor);
 	border-radius: 1rem;
 	backdrop-filter: blur(2rem);
-	box-shadow: 6px 6px 20px rgba(122,122,122,0.2);
 	z-index: 3;
 	margin-top: 1em;
 }
