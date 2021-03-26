@@ -54,6 +54,10 @@ p{
 	color: var(--textColor1);
 }
 
+a{
+	text-decoration: none;
+}
+
 hr{
 	border: 0; 
 	border-top: 1px solid var(--lineBreakColor);
@@ -176,6 +180,9 @@ main{
 	margin-top: 1em;
 }
 
+.content-container{
+	width: 70%;
+}
 
 #projects-title-wrapper{
 	display: flex;
@@ -208,7 +215,7 @@ main{
 	display: flex;
 	margin-top: 1em;
 	padding: 20px;
-	
+	/*overflow: auto;*/
 	width: fit-content;
 	
 }
@@ -363,8 +370,6 @@ main{
 }
 
 
-
-
 .blob1, .blob2{
 	height: 20rem;
 	width: 20rem;
@@ -396,8 +401,9 @@ main{
 }
 
 
-@media screen and (max-width:910px){
-.skills-container{
+@media screen and (max-width:500px){
+
+.skills-container-wrapper{
 	flex-direction: column;
 }
 
@@ -405,8 +411,12 @@ main{
 
 
 
+@media screen and (max-width:980px){
+	
+	.content-container{
+		width: 100%;
+	}
 
-@media screen and (max-width:600px){
 	.bio-container{
 		width: 100%;
 	
@@ -414,6 +424,22 @@ main{
 	.container{
 		flex-direction: column;
 	}
-	
+
+
+	.about-wrapper{
+		margin-left: 0;
+		margin-bottom: 0;
+	}
+
+	.projects-container{
+		padding:1em 0;
 	}
 	
+}
+
+
+@media screen and (max-width:1000px){
+	.portfolio{
+		width: 90%;
+	}
+}
